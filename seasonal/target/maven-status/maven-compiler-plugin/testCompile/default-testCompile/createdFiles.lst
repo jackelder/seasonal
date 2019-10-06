@@ -1,0 +1,7 @@
+com/sg/seasonal/data/RoleDaoTest.class
+com/sg/seasonal/data/AvailabilityDaoTest.class
+com/sg/seasonal/data/IngredientDaoTest.class
+com/sg/seasonal/data/RecipeDaoTest.class
+com/sg/seasonal/data/AccountDaoTest.class
+com/sg/seasonal/data/LocationDaoTest.class
+com/sg/seasonal/data/SeasonDaoTest.class

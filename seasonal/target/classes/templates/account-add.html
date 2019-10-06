@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+
+<head th:replace="~{shared :: head('seasonal')}">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>seasonal</title>
+</head>
+
+
+<body>
+  <div th:replace="~{shared :: nav}"></div>
+  <div class="container">
+    <br>
+    <h1>New Account</h1>
+    <hr>
+
+    <div class="row">
+      <div class="col-md-6">
+        <form class="form" method="POST" action="/addAccount">
+          <div class="form-group">
+            <label for="username" class="control-label">Username</label>
+            <input type="text" class="form-control" name="username" id="username">
+            <div th:if="${#fields.hasErrors('account.username')}">
+              <p th:each="error : ${#fields.errors('account.username')}" class="alert alert-danger"
+                th:text="${error}">Invalid Username></p>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="password" class="control-label">Password</label>
+            <input type="password" class="form-control" name="password" id="password">
+            <div th:if="${#fields.hasErrors('account.password')}">
+              <p th:each="error : ${#fields.errors('account.password')}" class="alert alert-danger"
+                th:text="${error}">Invalid Password></p>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="firstName" class="control-label">First Name</label>
+            <input type="text" class="form-control" name="firstName" id="firstName">
+            <div th:if="${#fields.hasErrors('account.firstName')}">
+              <p th:each="error : ${#fields.errors('account.firstName')}" class="alert alert-danger"
+                th:text="${error}">Invalid First Name></p>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="lastName" class="control-label">Last Name</label>
+            <input type="text" class="form-control" name="lastName" id="lastName">
+            <div th:if="${#fields.hasErrors('account.lastName')}">
+              <p th:each="error : ${#fields.errors('account.lastName')}" class="alert alert-danger"
+                th:text="${error}">Invalid Last Name></p>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="description" class="control-label">About Me</label>
+            <textarea class="form-control" name="description" id="description" rows=3></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="imageUrl" class="control-label">Image URL</label>
+            <input type="text" class="form-control" name="imageUrl" id="imageUrl">
+            <div th:if="${#fields.hasErrors('account.imageUrl')}">
+              <p th:each="error : ${#fields.errors('account.imageUrl')}" class="alert alert-danger"
+                th:text="${error}">Invalid Image URL></p>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <button type="submit" class="btn btn-primary">Create Account</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+  <footer th:replace="~{shared :: footer}"></footer>
+  </div>
+  <!-- Full jQuery.js CDN, Popper.js CDN, Bootstrap JS CDN -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+
+</html>

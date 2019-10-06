@@ -1,0 +1,99 @@
+:root {
+  --very-pale-green: #2d9112;
+  --brownish-grey: #686868;
+  --yellowish-green: #87df1a;
+  --grassy-green: #45a600;
+  --marigold: #ffc207;
+}
+body{
+  font-family: "helvetica", arial,sans-serif;
+}
+h1{
+  font-family: "avenir", "helvetica", arial, sans-serif;
+}
+#homeTitle{
+  font-size: 3.5em;
+}
+.navbar{
+  background-color: #f5f5f5;
+}
+#ingredientResults, #recipeResults{
+  display: none;
+}
+.card-img-top{
+  max-width: 200px;
+}
+.availableIngredient, .availabilityScore{
+  color: var(--grassy-green);
+}
+#seasonalHomeButton{
+  color: black;
+}
+#seasonalHomeButton:hover{
+    text-decoration-color: green;
+}
+.list-group-item{
+  padding-left: 200;
+}
+.list-group-item{
+  width: 170%;
+}
+#recipeCollapseHead, .profileField{
+  font-weight: bold;
+}
+.cardTitle{
+  font-weight: bold;
+  text-align: center;
+}
+.card{
+  margin-top: 12px;
+  margin-bottom: 12px;
+  padding: 18px;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+footer{
+  background-color: var(--very-pale-green);
+  text-align: center;
+  padding: 24px 0px 12px 0px;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+#profilePicture{
+  max-width: 500px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+.navbar{
+  background-color: var(--very-pale-green);
+}
+#profileButton, #loginButton{
+  color: black;
+  background-color: var(--marigold);
+  border-color: var(--marigold);
+}
+#logoutButton{
+  color: black;
+  background-color: gray;
+}
+.btn-primary{
+  color: whitesmoke;
+  background-color: var(--grassy-green);
+  border-color: var(--grassy-green);
+}
+.btn-primary:hover{
+  color: black;
+  background-color: var(--marigold);
+  border-color: var(--marigold);
+}
+.btn-primary:active, .btn-primary:focus{
+  color: black !important;
+  background-color: var(--marigold) !important;
+  border-color: var(--marigold) !important;
+}
+.listCaption{
+  text-decoration: underline;
+}
