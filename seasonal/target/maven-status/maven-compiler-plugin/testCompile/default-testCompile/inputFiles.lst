@@ -1,7 +1,7 @@
-/Users/jackelder/Documents/Repos/g10-mpls-0619-jackelder18/Summatives/mastery-ddwa/seasonal/src/test/java/com/sg/seasonal/data/IngredientDaoTest.java
-/Users/jackelder/Documents/Repos/g10-mpls-0619-jackelder18/Summatives/mastery-ddwa/seasonal/src/test/java/com/sg/seasonal/data/AccountDaoTest.java
-/Users/jackelder/Documents/Repos/g10-mpls-0619-jackelder18/Summatives/mastery-ddwa/seasonal/src/test/java/com/sg/seasonal/data/RoleDaoTest.java
-/Users/jackelder/Documents/Repos/g10-mpls-0619-jackelder18/Summatives/mastery-ddwa/seasonal/src/test/java/com/sg/seasonal/data/LocationDaoTest.java
-/Users/jackelder/Documents/Repos/g10-mpls-0619-jackelder18/Summatives/mastery-ddwa/seasonal/src/test/java/com/sg/seasonal/data/RecipeDaoTest.java
-/Users/jackelder/Documents/Repos/g10-mpls-0619-jackelder18/Summatives/mastery-ddwa/seasonal/src/test/java/com/sg/seasonal/data/AvailabilityDaoTest.java
-/Users/jackelder/Documents/Repos/g10-mpls-0619-jackelder18/Summatives/mastery-ddwa/seasonal/src/test/java/com/sg/seasonal/data/SeasonDaoTest.java
+/Users/jackelder/code/seasonal/seasonal/src/test/java/com/sg/seasonal/data/IngredientDaoTest.java
+/Users/jackelder/code/seasonal/seasonal/src/test/java/com/sg/seasonal/data/RoleDaoTest.java
+/Users/jackelder/code/seasonal/seasonal/src/test/java/com/sg/seasonal/data/AvailabilityDaoTest.java
+/Users/jackelder/code/seasonal/seasonal/src/test/java/com/sg/seasonal/data/LocationDaoTest.java
+/Users/jackelder/code/seasonal/seasonal/src/test/java/com/sg/seasonal/data/AccountDaoTest.java
+/Users/jackelder/code/seasonal/seasonal/src/test/java/com/sg/seasonal/data/SeasonDaoTest.java
+/Users/jackelder/code/seasonal/seasonal/src/test/java/com/sg/seasonal/data/RecipeDaoTest.java
