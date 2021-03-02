@@ -1,0 +1,30 @@
+version: '3'
+services:
+  seasonal-flyway:
+    image: "flyway/flyway:7.5.4"
+    volumes:
+      - .:/flyway/sql
+    command: -url=jdbc:postgresql://seasonal-db:5432/seasonalpostgres -user=seasonaladmin -password=db_password -connectRetries=5 migrate
+    depends_on:
+      - seasonal-db 
+    links:
+      - seasonal-db
+  seasonal-db:
+    image: "postgres:11-alpine"
+    container_name: seasonal-postgres
+    ports:
+      - "5432:5432"
+    volumes:
+      - ./:/opt/seasonalpostgres
+    environment:
+      - POSTGRES_USER=seasonaladmin
+      - POSTGRES_PASSWORD=db_password
+      - POSTGRES_DB=seasonalpostgres
+  # seasonal-api:
+  #   build: . .
+  #   ports: 
+  #     - "8080:8080"
+  #   # environment:
+  #   depends_on:
+  #     - seasonal-flyway
+  #     - seasonal-db
