@@ -1,5 +1,15 @@
+test:
+	mvn test
+
+build:
+	mvn package
+
+# build Docker image via docker-compose
+docker-build: build
+	docker-compose build
+
 # run postgres DB container, flyway container to bootstrap DB, and API container
-run:
+docker-run: docker-build
 	docker-compose up
 
 # connect to a running DB container

@@ -1,1 +1,5 @@
-seasonal/target/
+# build files
+target/
+
+# development
+nbproject/
