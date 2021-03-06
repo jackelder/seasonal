@@ -2,7 +2,7 @@ test:
 	mvn test
 
 build:
-	mvn package
+	mvn clean package
 
 # build Docker image via docker-compose
 docker-build: build
@@ -14,6 +14,6 @@ docker-run:
 
 # connect to a running DB container
 connect:
-	docker exec -it seasonal-postgres bash
 	# after connecting, run this command to inspect the DB:
 	# psql -U seasonaladmin seasonalpostgres
+	docker exec -it seasonal-postgres bash
