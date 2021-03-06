@@ -11,7 +11,8 @@ Separate main methods run the main application (App.java), the ingredient scrape
 
 1. Clone this repo
 2. Navigate to the clone directory
-3. Run `make docker-run`
-4. Find seasonal at http://localhost:8080/
+3. Run `make docker-build`
+4. Run `make docker-run`
+5. Find seasonal at http://localhost:8080/
 
-Running `make docker-run` will build the project's JAR file and copy it into a new Docker image, then docker-compose will start the database container, bootstrap the database using Flyway, and start the application container.
+Running `make docker-build` will build the project's JAR file and copy it into a new Docker image. Running `make docker-run` will start the database container, bootstrap the database using Flyway, and start the application container.

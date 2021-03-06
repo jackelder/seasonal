@@ -9,7 +9,7 @@ docker-build: build
 	docker-compose build
 
 # run postgres DB container, flyway container to bootstrap DB, and API container
-docker-run: docker-build
+docker-run:
 	docker-compose up
 
 # connect to a running DB container
