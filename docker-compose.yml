@@ -4,7 +4,7 @@ services:
     image: "flyway/flyway:7.5.4"
     volumes:
       - .:/flyway/sql
-    command: -url=jdbc:postgresql://seasonal-db:5432/seasonalpostgres -user=seasonaladmin -password=db_password -connectRetries=5 migrate
+    command: -url=jdbc:postgresql://seasonal-db:5432/seasonalpostgres -user=seasonaladmin -password=db_password -connectRetries=5 -q migrate
     depends_on:
       - seasonal-db 
     links:
